@@ -1,0 +1,9 @@
+version = 0.1
+[netherlands]
+[netherlands.deploy]
+[netherlands.deploy.parameters]
+stack_name = "hello-lambda-app"
+s3_bucket = "bkg-job-artifacts-bayram"
+s3_prefix = "hello-lambda-app"
+region = "eu-central-1"
+capabilities = "CAPABILITY_IAM"

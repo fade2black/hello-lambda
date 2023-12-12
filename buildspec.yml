@@ -1,0 +1,20 @@
+
+version: 0.2
+
+env:
+  variables:
+    PAIR_COUNTRY: netherlands
+    
+phases:
+  # install:
+  #   runtime-versions:
+  #     ruby: 3.2
+  #   commands:
+  #     - echo "Installing necessary libs/packages..."
+  build:
+    commands:
+      - ls -al
+      - sam --version
+      - sam build
+      - echo "Deploying for '$PAIR_COUNTRY'"
+      - sam deploy --config-env=$PAIR_COUNTRY --resolve-image-repos 
