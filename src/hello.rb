@@ -1,8 +1,6 @@
 require "json"
 require 'logger'
 
-
-
 def lambda_handler(event:, context:)
   logger = Logger.new(STDOUT)
   logger.info{ "Hello, lambda!" }

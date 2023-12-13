@@ -17,4 +17,4 @@ phases:
       - sam --version
       - sam build
       - echo "Deploying for '$PAIR_COUNTRY'"
-      - sam deploy --config-env=$PAIR_COUNTRY --resolve-image-repos 
+      - sam deploy --config-env=$PAIR_COUNTRY 
